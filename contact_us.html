@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet"  href="css/font-awesome.min.css">
+<link rel="stylesheet"  href="css/bootstrap.min.css"> 
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/hover.css"> 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ractive"></script>  
+<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+  <!-- start nav -->
+  <header>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" id="nav-bar-btn" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">
+          <div class="cf">
+         <h1 class="logo">Sedeers</h1>
+       </div>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li class="active"><a href="contact_us.html">Contanct Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  
+<!-- end nav -->
+<section class="contact-header">
+  <div class="image">
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="row">
+          <h1 class="text-center wow flipInX" data-wow-duration="1.5s">Contact Us</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="mycontact2">
+  <h1 class="text-center mycontact">Contact Us</h1>
+</div> -->
+
+
+<div class="about">
+<div id="container"></div>
+  <script id="template">
+    <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div>
+    <div class="contact-wrapper">
+        <div class="envelope {{ flipCard ? 'active' : '' }}">
+          <div class="back paper"></div>
+          <div class="content">
+            <div class="form-wrapper">
+              <form>
+                <div class="top-wrapper">
+                  <div class="input">
+                    <label>Name</label>
+                    <input type="text" name="name"/>
+                  </div>
+                  <div class="input">
+                    <label>Phone</label>
+                    <input type="text" name="phone"/>
+                  </div>
+                  <div class="input">
+                    <label>Email</label>
+                    <input type="text" name="_replyto"/>
+                  </div>
+                </div>
+                <div class="bottom-wrapper">
+                  <div class="input">
+                    <label>Subject</label>
+                    <input type="text" name="_subject"/>
+                  </div>
+                  <div class="input">
+                    <label>Message</label>
+                    <textarea rows="5" name="message"></textarea>
+                  </div>
+                  <div class="submit">
+                    <div class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="front paper"></div>
+        </div>
+      </div>
+    
+  </script>
+
+
+
+
+<!-- foooooooter -->
+
+<div class="body contact_ff">
+  <div class="body footer2">
+  <div class="container">
+    <div class="footer2-ft">
+      <div class="row">
+        <div class="col-xs-6">
+          <p class="logo_footer">Sedeers</p>
+          <p class="ptext">Insanyah.com is the first online charitable community that connects Non-Profits with their supporters (Volunteers, Donors, and Companies), to achieve goals that serve humanity, by facilitating cooperation and communication among the concerned parties.</p>
+        </div>
+
+        <div class="col-xs-3">
+          <ul>
+            <li><a href="#">Seeder</a></li>
+            <li><a href="#">Seeder</a></li>
+            <li><a href="#">Seeder</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-3">
+          <ul>
+            <li><a href="#">Seeder</a></li>
+            <li><a href="#">Seeder</a></li>
+            <li><a href="#">Seeder</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<footer class="flex-rw">
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> 2018 Pavilion In <address class="footer-address" role="company address">Egypt</address><span class="footer-bottom-rights"> - All Rights Reserved By Sedeers </span>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="about_us.html" class="generic-anchor" rel="nofollow">About Us</a> | <a href="contact_us.html" class="generic-anchor" rel="nofollow">Contact Us</a> | <a href="faq.html" class="generic-anchor" rel="nofollow">FAQs</a> | <a href="terms_condition.html" class="generic-anchor" rel="nofollow">Terms & Condition</a> | <a href="privacy_policy.html" class="generic-anchor" rel="nofollow">Privacy Policy</a>
+      </div>
+  </section>
+</footer>
+</div>
+<!-- end fooooooooter -->
+
+  <script type="text/javascript">
+    var ractive = new Ractive({
+    el: '#container',
+    template: '#template',
+    data: {}
+  });
+
+  </script>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script> new WOW().init();</script>
+<script src="js/scripts.js"></script> 
+</body>
+</html>

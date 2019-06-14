@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>project6</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome icons -->
+	<link rel="stylesheet"  href="css/font-awesome.min.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/typeitout.min.css">  
+		
+
+
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/owl.theme.default.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/g/jquery.owlcarousel@1.31(owl.carousel.css+owl.theme.css)">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" id="nav-bar-btn" class="navbar-toggle">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">
+	      	<div class="cf">
+			   <h1 class="logo">Sedeers</h1>
+		   </div>
+	      </a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="active"><a href="index.html">Home</a></li>
+	        <li><a href="about_us.html">About Us</a></li>
+	        <li><a href="contact_us.html">Contanct Us</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</header>
+	
+
+
+<!-- star class1 -->
+<div class="class1">
+	<div class="image">
+		<div class="image-back"><!-- 
+			<div class="text container-fluid">
+				<h1 class="type-it">Seeders Web Site ...</h1>
+			</div> -->
+			<div class="text container-fluid wow bounceInLeft" data-wow-duration="1.5s">
+				<div class="col-md-8">
+					<h1 class="type-it">Beautiful Websites...Increased Conversions.</h1>
+					<button class="btn hvr-pop">Try It Free</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end class1 -->
+
+
+<!-- formmmmmmmmmmmmm -->
+<section class="login-sec">
+		<div class="left">
+	  		<button class="btn log-in mybtn wow tada" id="signup">Sign Up</button>
+	  	</div>
+
+		<div class="login-form">
+
+			<form id="sign-up-form">
+			   <!--   con = Container  for items in the form-->
+			   <div class="con">
+			   <!--     Start  header Content  -->
+			   <div class="head-form .header2">
+			      <h2 class="myh2">Sign Up</h2>
+			      <!--     A welcome message or an explanation of the login form -->
+			      <p class="myp">please complete these fields</p>
+			       <!--     A welcome message or an explanation of the login form -->
+			   </div>
+			   <!--     End  header Content  -->
+			   <br>
+			   <div class="field-set">
+			     
+			      <!--   user name -->
+			         <span class="input-item">
+			           <i class="fa fa-user-circle"></i>
+			         </span>
+			        <!--   user name Input-->
+			         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+			     
+			      <br>
+
+			      <!--   email -->
+			         <span class="input-item">
+			           <i class="fa fa-envelope-square"></i>
+			         </span>
+			        <!--   email Input-->
+			         <input class="form-input" id="txt-input" type="text" placeholder="@Email" required>
+			     
+			      <br>
+			     
+			           <!--   Password -->
+			     
+			      <span class="input-item">
+			        <i class="fa fa-key"></i>
+			       </span>
+			      <!--   Password Input-->
+			      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+			     
+					<!--      Show/hide password  -->
+			     <span>
+			        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+			     </span>
+			     
+			     
+			      <br>
+
+			      <!--   phone -->
+			         <span class="input-item">
+			           <i class="fa fa-phone"></i>
+			         </span>
+			        <!--   phone Input-->
+			         <input class="form-input" id="txt-input" type="text" placeholder="@PhoneNumber" required>
+			     
+			      <br>
+					<!--        buttons -->
+					<!--      button LogIn -->
+			      <button class="log-in xx"> Sign Up </button>
+			      <button id="login---login" class="btn log-in btn-block">LOGIN</button>
+			   </div>
+			  
+				
+			     
+				<!--   End Conrainer  -->
+			  </div>
+			  
+			  <!-- End Form -->
+			</form>
+
+		  	<!-- LOGN IN FORM by Omar Dsoky -->
+			<form id="login-form">
+			   <!--   con = Container  for items in the form-->
+			   <div class="con">
+			   <!--     Start  header Content  -->
+			   <div class="head-form .header2">
+			      <h2 class="myh2">Log In</h2>
+			      <!--     A welcome message or an explanation of the login form -->
+			      <p class="myp">login here using your username and password</p>
+			       <!--     A welcome message or an explanation of the login form -->
+			   </div>
+			   <!--     End  header Content  -->
+			   <br>
+			   <div class="field-set">
+			     
+			      <!--   user name -->
+			         <span class="input-item">
+			           <i class="fa fa-user-circle"></i>
+			         </span>
+			        <!--   user name Input-->
+			         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+			     
+			      <br>
+			     
+			           <!--   Password -->
+			     
+			      <span class="input-item">
+			        <i class="fa fa-key"></i>
+			       </span>
+			      <!--   Password Input-->
+			      <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+			     
+					<!--      Show/hide password  -->
+			     <span>
+			        <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+			     </span>
+			     
+			     
+			      <br>
+					<!--        buttons -->
+					<!--      button LogIn -->
+			      <button class="log-in btn  btn-block"> Log In </button>
+			   </div>   <br>
+			  
+				<!--   other buttons -->
+			   <div class="other">
+					<!--      Forgot Password button-->  <br>
+			      <i class="fa fa-unlock" aria-hidden="true"></i>
+			      <button class="btn submits frgt-pass">Forgot Password</button>
+					<!--     Sign Up button -->
+					<!--         Sign Up font icon -->
+			      </button>
+
+				<!--      End Other the Division -->
+			   </div>
+			     
+				<!--   End Conrainer  -->
+			  </div>
+			  
+			  <!-- End Form -->
+			</form>
+
+		</div>
+	</section>
+
+
+<!-- 7alaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat -->
+    	<!-- Start Our Work -->
+        <div class="our-work text-center">
+        	<div class="container">
+        		<h1 class="upper">Donation Section </span></h1>
+                <div class="items-box">
+					<div class="item hvr-shrink">
+                        <img src="img/work_02.png" alt="" />
+                        <div class="text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hvr-shrink">
+                        <img src="img/work_02.png" alt="" />
+                        <div class="text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hvr-shrink">
+                        <img src="img/work_03.png" alt="" />
+                        <div class=" text-center">
+							<div class="grid">
+								<h2>Positive chart value</h2>
+								<section>
+									<div class="">
+										<div class="div1 text-center">
+									  		<span>DONATED</span> 
+									  	</div>
+										<div class="div1 text-center">
+
+										  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+										      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+										      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+										      <g class="circle-chart__info"> 
+										        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+										        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+										      </g>  
+										    </svg>
+										</div>   
+										<div class="div1 text-center">
+									    	<span>$1600 To Go  </span>
+									    </div>
+								    </div> 
+								    <p>children donated children donated children donated children donated</p>
+								    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+								</section>
+							</div>
+                        </div>
+                    </div>
+                    <div class="item hvr-shrink">
+                        <img src="img/work_04.png" alt="" />
+                        <div class=" text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hvr-shrink">
+                        <img src="img/work_05.png" alt="" />
+                        <div class="text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+
+
+                    <div class="item hvr-shrink">
+                        <img src="img/work_06.png" alt="" />
+                        <div class=" text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hidden-item hvr-shrink">
+                        <img src="img/work_01.png" alt="" />
+                        <div class=" text-center">
+                           <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hidden-item hvr-shrink">
+                        <img src="img/work_03.png" alt="" />
+                        <div class="text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                    <div class="item hidden-item hvr-shrink">
+                        <img src="img/work_03.png" alt="" />
+                        <div class="text-center">
+                            <div class="grid">
+							<h2>Positive chart value</h2>
+							<section>
+								<div class="">
+									<div class="div1 text-center">
+								  		<span>DONATED</span> 
+								  	</div>
+									<div class="div1 text-center">
+
+									  	<svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="65" height="65" xmlns="http://www.w3.org/2000/svg"> 
+									      <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" /> 
+									      <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="2" stroke-dasharray="30,100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+									      <g class="circle-chart__info"> 
+									        <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">30%</text>
+									        <text class="circle-chart__subline" x="16.91549431" y="20.5" alignment-baseline="central" text-anchor="middle" font-size="2">Yay 30% progress!</text>
+									      </g>  
+									    </svg>
+									</div>   
+									<div class="div1 text-center">
+								    	<span>$1600 To Go  </span>
+								    </div>
+							    </div> 
+							    <p>children donated children donated children donated children donated</p>
+							    <button class="btn btn-primary hvr-sweep-to-right">Donation</button>
+							</section>
+						</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="show-more upper">Show More</button>
+        	</div>
+        </div>
+        <!-- end Our Work -->
+  <!-- 7alaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat -->
+
+
+<!-- featureeeeeeeeeeeeeeeees -->
+<div class="fetch container-fluid">
+	<div class="class2 container">
+	<h1>Features</h1>
+	<div class="row">
+		<div class="col-md-6 col-xs-6 div1 wow bounceInLeft" data-wow-duration="1.5s"> <img src="img/bg6.jpg" width="150px;" style="height: 400px;" class="hvr-shrink"></div>
+		<div class="col-md-6 col-xs-6 div2">
+			<h1>NextGen Framework</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, vel! Eius pariatur nemo expedita.</p>
+			<a href="#">Learn More <i class="fa fa-angle-right"></i></a>
+		</div>
+	</div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="class10 container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-1-icon.png">
+			<h3>CROSS BROWSER</h3>
+			<p>Canvas 4 Loads Faster & Smoother than the Previous Versions providing an Optimal Experience for your Users.</p>
+		</div>
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-2-icon.png">
+			<h3>FLEXIBLE OPTIONS</h3>
+			<p>Unleash the Power of Mega Menus by adding Widgets & Mixed Columns powered by the Bootstrap Grid.</p>
+		</div>
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-3-icon.png">
+			<h3>SCHEDULED BACKUPS</h3>
+			<p>Amazing set of New Components giving you Opportunity to Create an Interactive Website for your Business.</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-1-icon.png">
+			<h3>CROSS BROWSER</h3>
+			<p>Canvas 4 Loads Faster & Smoother than the Previous Versions providing an Optimal Experience for your Users.</p>
+		</div>
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-2-icon.png">
+			<h3>FLEXIBLE OPTIONS</h3>
+			<p>Unleash the Power of Mega Menus by adding Widgets & Mixed Columns powered by the Bootstrap Grid.</p>
+		</div>
+		<div class="col-md-4 col-xs-4 text">
+			<img src="img/section-3-icon.png">
+			<h3>SCHEDULED BACKUPS</h3>
+			<p>Amazing set of New Components giving you Opportunity to Create an Interactive Website for your Business.</p>
+		</div>
+	</div>
+</div>
+
+</div>
+<!-- end featureeeeeeeeeeeeeeeees -->
+
+
+
+<div class="clearfix"></div>
+
+<!-- counteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer -->
+
+<div class="count">
+	<div class="back">
+		<div class="counter">
+	<div class="sectiontitle">
+    <h2>Projects statistics</h2>
+    <span class="headerLine"></span>
+</div>
+<div id="projectFacts" class="sectionClass">
+    <div class="fullWidth eight columns">
+        <div class="projectFactsWrap">
+            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+                <i class="fa fa-briefcase"></i>
+                <p id="number1" class="number">12</p>
+                <p>Projects done</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+                <i class="fa fa-smile-o"></i>
+                <p id="number2" class="number">55</p>
+                <p>Happy clients</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+                <i class="fa fa-coffee"></i>
+                <p id="number3" class="number">359</p>
+                <p>Cups of coffee</p>
+            </div>
+            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+                <i class="fa fa-camera"></i>
+                <p id="number4" class="number">246</p>
+                <p>Photos taken</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+	</div>
+</div>
+
+
+<!-- end counteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeer -->
+
+
+
+
+<!-- ttw3aaaaaaaaaaaaaaaaaaaaat -->
+
+ <!-- Start Our donation -->
+        <div class="our-donation">
+        	<div class="container">
+        		<h1 class="text-center">Volunteer Oppertunities</h1>
+               
+                <div class="items-box">
+
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+
+                        <div class="over">
+                            <div class="caption">
+			                    <!-- <h4 itemprop="headline">Title</h4> -->
+			                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+			                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+			                </div>
+			                <div class="duration">
+			                        <h4>Deadline</h4>
+			                        <div id="clockdiv" class="clockdiv">
+			                          <div>
+			                            <span class="days"></span>
+			                            <div class="smalltext">Days</div>
+			                          </div>
+			                          <div>
+			                            <span class="hours"></span>
+			                            <div class="smalltext">Hours</div>
+			                          </div>
+			                          <div>
+			                            <span class="minutes"></span>
+			                            <div class="smalltext">Minutes</div>
+			                          </div>
+			                          <div>
+			                            <span class="seconds"></span>
+			                            <div class="smalltext">Seconds</div>
+			                          </div>
+			                          <br>
+			                        </div>
+			                </div>
+			                <div class="skills">
+			                    <h4>Skills</h4>
+			                    <button class="btn skill1">Skill 1</button>
+			                    <button class="btn skill2">Skill 2</button>
+			                    <button class="btn skill3">Skill 3</button>
+			                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                   
+                    <h5 itemprop="headline">
+                       <span class="ico fa fa-user"></span>
+                       <a href="#" rel="bookmark">By Sedeers</a>
+                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv1" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv2" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    <h5 itemprop="headline">
+                   <span class="ico fa fa-user"></span>
+
+                        <a href="#" rel="bookmark">By Sedeers</a>
+                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv3" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv4" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                   
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv5" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                    <div class="item hidden-item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv6" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                     <div class="item hidden-item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv7" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                     <div class="item hidden-item">
+                        <img src="img/img-2.jpg" alt="" />
+                        <h1 class="img-title">title <button class="btn btn-primary title-btn">Apply</button></h1>
+                        <div class="over">
+                            <div class="caption">
+                    
+                    <h5 itemprop="headline">
+			                    	<span class="ico fa fa-user"></span>
+			                        <a href="#" rel="bookmark">By Sedeers</a>
+			                    </h5>
+                    <p itemprop="text" class="flex-text text-muted">5 ways baby boomers are changing healthcare ....</p>
+                </div>
+                <div class="duration">
+                        <h4>Deadline</h4>
+                        <div id="clockdiv8" class="clockdiv">
+                          <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+                          </div>
+                          <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+                          </div>
+                          <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+                          </div>
+                          <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+                          </div>
+                          <br>
+                        </div>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <button class="btn skill1">Skill 1</button>
+                    <button class="btn skill2">Skill 2</button>
+                    <button class="btn skill3">Skill 3</button>
+                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                	<button class="show-more2">Show More</button>
+                </div>
+        	</div>
+        </div>
+        <!-- end Our donation -->
+
+<!-- end ttw3aaaaaaaaaaaaaaaaaaaaat -->
+
+
+
+
+
+
+<!-- coperationnnnnnnnnnns -->
+    <!--  Demos -->
+<div class="container operation">
+	<h1 id="textmm" class="text-center">Co-Operation With</h1>
+    <div class="">
+		<div class="col-md-12 col-sm-12">
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                    <li data-target="#Carousel" data-slide-to="2"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-md-3 col-xs-3"><a href="https://www.youtube.com/watch?v=l8sIJ7A4erg" class=""><img src="img/Gesr.png" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3 col-xs-3"><a href="https://www.elwatannews.com/news/details/885232" class=""><img src="img/elwaattan.png" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3 col-xs-3"><a href="http://www.youm7.com/story/2015/12/28/%D9%88%D8%B2%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%AA%D8%B6%D8%A7%D9%85%D9%86-%D8%A5%D8%B9%D8%AF%D8%A7%D8%AF-%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D8%A4%D8%B3%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A9/2512923#.VoJRnfl97IV" class=""><img src="img/youm7_logo.png" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3 col-xs-3"><a href="http://www.albawabhnews.com/1269012" class=""><img src="img/El-bwaba-news.png" alt="Image" style="max-width:100%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3 col-xs-3"><a href="https://www.youtube.com/watch?v=UA3lPVBsFzI" class=""><img src="img/VideoYoum7.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3 col-xs-3"><a href="http://www.elfagr.com/1975575" class=""><img src="img/Elfagrorg.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3 col-xs-3"><a href="http://www.vetogate.com/1972709" class=""><img src="img/vetogate.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3 col-xs-3"><a href="http://www.elbalad.news/1891949" class=""><img src="img/Elbalad.jpg" alt="Image" style="max-width:100%;"></a></div>
+                	</div><!--.row-->
+                </div><!--.item-->
+
+                <div class="item">
+                	<div class="row">
+                		<div class="col-md-3 col-xs-3"><a href="https://www.facebook.com/UNDPEgypt/photos/pcb.1204649706229826/1204639129564217/?type=3&theater" class=""><img src="img/Microsoft.png" alt="Image" style="max-width:100%;"></a></div>
+                		
+                	</div><!--.row-->
+                </div><!--.item-->
+
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+		</div>
+	</div>
+</div><!--.container-->
+
+
+
+
+<!-- testimonialllllllllls -->
+
+<div class="class8 container-fluid">
+	<div class="image">
+		<div class="image-back">
+			<h1 class="testimonialtext text-center">What Clients Say !!</h1>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner text-center">
+      <div class="item active">
+        <img src="img/3.jpg" width="80px" class="img-circle text-center" >
+        <h3>Similique fugit repellendus expedita excepturi iure provident quia eaque. Repellendus, vero numquam?</h3>
+        <p> - STEVE JOBS</p>
+        <span>Apple Inc.</span>
+      </div>
+
+      <div class="item">
+        <img src="img/2.jpg" width="80px" class="img-circle" >
+        <h3>Natus voluptatum enim quod necessitatibus quis expedita harum provident eos obcaecati id culpa corporis molestias.</h3>
+        <p> -  COLLIS TA'EED</p>
+        <span>Envato Inc.</span>
+      </div>
+    
+      <div class="item">
+        <img src="img/1.jpg" width="80px" class="img-circle" >
+        <h3>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero illo rerum!</h3>
+        <p> - JOHN DOE</p>
+        <span>XYZ Inc.</span>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+		</div>
+	</div>
+</div>
+<!-- end testimonialllllllllls -->
+
+
+
+<!-- foooooooter -->
+<div class="body footer2">
+	<div class="container">
+		<div class="footer2-ft">
+			<div class="row">
+				<div class="col-xs-6">
+					<p class="logo_footer">Sedeers</p>
+					<p class="ptext">Insanyah.com is the first online charitable community that connects Non-Profits with their supporters (Volunteers, Donors, and Companies), to achieve goals that serve humanity, by facilitating cooperation and communication among the concerned parties.</p>
+				</div>
+
+				<div class="col-xs-3">
+					<ul>
+						<li><a href="#">Seeder</a></li>
+						<li><a href="#">Seeder</a></li>
+						<li><a href="#">Seeder</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-3">
+					<ul>
+						<li><a href="#">Seeder</a></li>
+						<li><a href="#">Seeder</a></li>
+						<li><a href="#">Seeder</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer class="flex-rw">
+  <section class="footer-social-section flex-rw">
+      <span class="footer-social-overlap footer-social-connect">
+      CONNECT <span class="footer-social-small">with</span> US
+      </span>
+      <span class="footer-social-overlap footer-social-icons-wrapper">
+      <a href="https://www.pinterest.com/paviliongift/" class="generic-anchor" target="_blank" title="Pinterest" itemprop="significantLink"><i class="fa fa-pinterest"></i></a>
+      <a href="https://www.facebook.com/paviliongift" class="generic-anchor" target="_blank" title="Facebook" itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/PavilionGiftCo" class="generic-anchor" target="_blank" title="Twitter" itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/paviliongiftcompany" class="generic-anchor" target="_blank" title="Instagram" itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCYgUODvd0qXbu_LkUWpTVEg" class="generic-anchor" target="_blank" title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+      <a href="https://plus.google.com/+Paviliongift/posts" class="generic-anchor" target="_blank" title="Google Plus" itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+      </span>
+  </section>
+  <section class="footer-bottom-section flex-rw">
+<div class="footer-bottom-wrapper">   
+<i class="fa fa-copyright" role="copyright">
+ 
+</i> 2018 Pavilion In <address class="footer-address" role="company address">Egypt</address><span class="footer-bottom-rights"> - All Rights Reserved By Sedeers </span>
+    </div>
+    <div class="footer-bottom-wrapper">
+    <a href="about_us.html" class="generic-anchor" rel="nofollow">About Us</a> | <a href="contact_us.html" class="generic-anchor" rel="nofollow">Contact Us</a> | <a href="faq.html" class="generic-anchor" rel="nofollow">FAQs</a> | <a href="terms_condition.html" class="generic-anchor" rel="nofollow">Terms & Condition</a> | <a href="privacy_policy.html" class="generic-anchor" rel="nofollow">Privacy Policy</a>
+      </div>
+  </section>
+</footer>
+</div>
+<!-- end fooooooooter -->
+
+
+
+
+
+<!-- start scroll to top -->
+<div id="scroll-top">
+  <i class="fa fa-chevron-up fa-2x"></i>
+</div>
+<!-- end scroll to top -->
+
+
+
+
+<!-- start loading -->
+<div class="loading-overlay">
+	<div class="spinner">
+	  <div class="cube1"></div>
+	  <div class="cube2"></div>
+	</div>
+</div>
+<!-- start loading -->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<!-- <script src="js/owl.carousel.min.js"></script> -->
+
+<script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,jquery.migrate@1.4.1,bootstrap@3.3.7,jquery.matchheight@0.7.0,jquery.owlcarousel@1.31"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script> new WOW().init();</script>
+<script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+<script src="js/scripts.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/typeitout.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+    $('.type-it').typeIt({
+        content : 'Seeders Beautiful Websites...Increased Conversions.',
+        speed: 200
+    });
+});
+</script>
+</body>
+</html>
